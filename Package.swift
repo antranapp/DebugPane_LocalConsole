@@ -14,7 +14,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: ".//DebugPane"),
+        .package(url: "https://github.com/antranapp/DebugPane", .branch("master")),
         .package(url: "https://github.com/duraidabdul/LocalConsole", .branch("main")),
     ],
     targets: [
