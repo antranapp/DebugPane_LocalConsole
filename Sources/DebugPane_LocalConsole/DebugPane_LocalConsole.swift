@@ -9,7 +9,7 @@ import SwiftUI
 import TweakPane
 
 public struct LocalConsoleBlade: Blade {
-    public var name: String = "Local Console"
+    public var name: String? = "Local Console"
     
     public init() {}
     

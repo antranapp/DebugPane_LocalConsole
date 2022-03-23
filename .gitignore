@@ -70,6 +70,8 @@ Carthage/Build/
 Dependencies/
 .accio/
 
+Package.resolved
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo.
