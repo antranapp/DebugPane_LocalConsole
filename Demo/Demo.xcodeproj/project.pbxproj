@@ -11,10 +11,9 @@
 		7F1EDFAE27E5636D005D7EFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDFAD27E5636D005D7EFF /* ViewController.swift */; };
 		7F1EDFB327E5636E005D7EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1EDFB227E5636E005D7EFF /* Assets.xcassets */; };
 		7F1EDFB627E5636E005D7EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1EDFB427E5636E005D7EFF /* LaunchScreen.storyboard */; };
-		7F96131927E9397400AAF290 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 7F96131827E9397400AAF290 /* Logging */; };
-		7FA9E82F27E76FE000706758 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7FA9E82E27E76FE000706758 /* Alamofire */; };
-		7FD2F82227E9FB3C00E21E8F /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD2F82127E9FB3C00E21E8F /* UIWindow+Extensions.swift */; };
-		D766520227EC745A004DC1CE /* DebugPane_LocalConsole in Frameworks */ = {isa = PBXBuildFile; productRef = D766520127EC745A004DC1CE /* DebugPane_LocalConsole */; };
+		7F84EA1827ECB22800200073 /* DebugPane_LocalConsole in Frameworks */ = {isa = PBXBuildFile; productRef = 7F84EA1727ECB22800200073 /* DebugPane_LocalConsole */; };
+		7F84EA1B27ECB27300200073 /* LocalConsole in Frameworks */ = {isa = PBXBuildFile; productRef = 7F84EA1A27ECB27300200073 /* LocalConsole */; };
+		7F84EA1E27ECB29A00200073 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 7F84EA1D27ECB29A00200073 /* Logging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		7F1EDFB227E5636E005D7EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1EDFB527E5636E005D7EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F1EDFB727E5636E005D7EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FD2F82127E9FB3C00E21E8F /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		D766520027EC7222004DC1CE /* DebugPane_LocalConsole */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DebugPane_LocalConsole; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,9 +31,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F96131927E9397400AAF290 /* Logging in Frameworks */,
-				D766520227EC745A004DC1CE /* DebugPane_LocalConsole in Frameworks */,
-				7FA9E82F27E76FE000706758 /* Alamofire in Frameworks */,
+				7F84EA1E27ECB29A00200073 /* Logging in Frameworks */,
+				7F84EA1B27ECB27300200073 /* LocalConsole in Frameworks */,
+				7F84EA1827ECB22800200073 /* DebugPane_LocalConsole in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +61,6 @@
 		7F1EDFA827E5636D005D7EFF /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				7FD2F82127E9FB3C00E21E8F /* UIWindow+Extensions.swift */,
 				7F1EDFA927E5636D005D7EFF /* AppDelegate.swift */,
 				7F1EDFAD27E5636D005D7EFF /* ViewController.swift */,
 				7F1EDFB227E5636E005D7EFF /* Assets.xcassets */,
@@ -97,9 +94,9 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
-				7FA9E82E27E76FE000706758 /* Alamofire */,
-				7F96131827E9397400AAF290 /* Logging */,
-				D766520127EC745A004DC1CE /* DebugPane_LocalConsole */,
+				7F84EA1727ECB22800200073 /* DebugPane_LocalConsole */,
+				7F84EA1A27ECB27300200073 /* LocalConsole */,
+				7F84EA1D27ECB29A00200073 /* Logging */,
 			);
 			productName = Demo;
 			productReference = 7F1EDFA627E5636D005D7EFF /* Demo.app */;
@@ -130,8 +127,8 @@
 			);
 			mainGroup = 7F1EDF9D27E5636D005D7EFF;
 			packageReferences = (
-				7FA9E82D27E76FE000706758 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				7F96131727E9397400AAF290 /* XCRemoteSwiftPackageReference "swift-log" */,
+				7F84EA1927ECB27300200073 /* XCRemoteSwiftPackageReference "LocalConsole" */,
+				7F84EA1C27ECB29A00200073 /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
 			productRefGroup = 7F1EDFA727E5636D005D7EFF /* Products */;
 			projectDirPath = "";
@@ -159,7 +156,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FD2F82227E9FB3C00E21E8F /* UIWindow+Extensions.swift in Sources */,
 				7F1EDFAE27E5636D005D7EFF /* ViewController.swift in Sources */,
 				7F1EDFAA27E5636D005D7EFF /* AppDelegate.swift in Sources */,
 			);
@@ -379,38 +375,38 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7F96131727E9397400AAF290 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+		7F84EA1927ECB27300200073 /* XCRemoteSwiftPackageReference "LocalConsole" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-log";
+			repositoryURL = "https://github.com/duraidabdul/LocalConsole";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
 			};
 		};
-		7FA9E82D27E76FE000706758 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		7F84EA1C27ECB29A00200073 /* XCRemoteSwiftPackageReference "swift-log" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			repositoryURL = "https://github.com/apple/swift-log";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7F96131827E9397400AAF290 /* Logging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7F96131727E9397400AAF290 /* XCRemoteSwiftPackageReference "swift-log" */;
-			productName = Logging;
-		};
-		7FA9E82E27E76FE000706758 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7FA9E82D27E76FE000706758 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		D766520127EC745A004DC1CE /* DebugPane_LocalConsole */ = {
+		7F84EA1727ECB22800200073 /* DebugPane_LocalConsole */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DebugPane_LocalConsole;
+		};
+		7F84EA1A27ECB27300200073 /* LocalConsole */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F84EA1927ECB27300200073 /* XCRemoteSwiftPackageReference "LocalConsole" */;
+			productName = LocalConsole;
+		};
+		7F84EA1D27ECB29A00200073 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F84EA1C27ECB29A00200073 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

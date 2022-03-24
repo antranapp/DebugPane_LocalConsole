@@ -3,8 +3,8 @@
 //
 
 import Combine
-import LocalConsole
 import Logging
+import LocalConsole
 import SwiftUI
 import UIKit
 
@@ -19,6 +19,8 @@ final class ViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private let logger = Logger(label: "app.antran.debugpane.localconsole.log")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,10 +34,15 @@ final class ViewController: UIViewController {
         
         let button = UIButton()
         button.setTitleColor(.tintColor, for: .normal)
-        button.setTitle("Add logs", for: .normal)
+        button.setTitle("LocalConsole print", for: .normal)
         button.addTarget(self, action: #selector(self.didTapButton), for: .touchUpInside)
 
-        let stackView = UIStackView(arrangedSubviews: [instructionLabel, button])
+        let logButton = UIButton()
+        logButton.setTitleColor(.tintColor, for: .normal)
+        logButton.setTitle("Add logs", for: .normal)
+        logButton.addTarget(self, action: #selector(self.didTapLogButton), for: .touchUpInside)
+
+        let stackView = UIStackView(arrangedSubviews: [instructionLabel, button, logButton])
         stackView.axis = .vertical
         stackView.distribution = .equalSpacing
         stackView.spacing = 20
@@ -53,5 +60,9 @@ final class ViewController: UIViewController {
     
     @objc func didTapButton() {
         LCManager.shared.print("Button tapped")
+    }
+
+    @objc func didTapLogButton() {
+        logger.info("New log message")
     }
 }

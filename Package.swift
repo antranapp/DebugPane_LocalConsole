@@ -14,8 +14,18 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/antranapp/DebugPane", .branch("master")),
-        .package(url: "https://github.com/duraidabdul/LocalConsole", .branch("main")),
+        .package(
+            url: "https://github.com/antranapp/DebugPane",
+            .branch("master")
+        ),
+        .package(
+            url: "https://github.com/duraidabdul/LocalConsole",
+            .branch("main")
+        ),
+        .package(
+            url: "https://github.com/apple/swift-log",
+            .upToNextMajor(from: "1.4.2")
+        )
     ],
     targets: [
         .target(
@@ -23,6 +33,7 @@ let package = Package(
             dependencies: [
                 "DebugPane",
                 "LocalConsole",
+                .product(name: "Logging", package: "swift-log"),
             ]
         ),
         .testTarget(
