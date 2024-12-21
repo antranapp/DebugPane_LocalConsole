@@ -24,7 +24,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/apple/swift-log",
-            .upToNextMajor(from: "1.6.1")
+            .upToNextMajor(from: "1.6.2")
         )
     ],
     targets: [
